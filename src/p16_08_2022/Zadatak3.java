@@ -10,6 +10,13 @@ public class Zadatak3 {
 		a.marka = "Fiat";
 		a.potrosnja = 5;
 		a.trenutnaBrzina = 120;
+		a.godinaProizvodnje = 2012;
+		a.registracija = 3;
+		a.kubikaza = 1249;
+		a.brojRegistracije = 12314;
+		a.klima = false;
+		a.maksimalnaBrzina = 180;
+		a.stampajTablu();
 		a.stampaj();
 		a.prekoracenje(50);
 

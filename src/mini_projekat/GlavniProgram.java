@@ -15,19 +15,7 @@ public class GlavniProgram {
 			igra1.makeAMove(s.nextInt());
 			igra1.playNext();
 		}
-//		igra1.startGame();
-//		igra1.makeAMove(0);
-//		igra1.playNext();
-//		igra1.makeAMove(1);
-//		igra1.playNext();
-//		igra1.makeAMove(3);
-//		igra1.playNext();
-//		igra1.makeAMove(2);
-//		igra1.playNext();
-//		igra1.makeAMove(6);
-		
 		igra1.print();
-
 	}
 
 }

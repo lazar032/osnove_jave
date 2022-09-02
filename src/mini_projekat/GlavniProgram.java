@@ -11,11 +11,18 @@ public class GlavniProgram {
 		XandOGame igra1 = new XandOGame(pera, nikola);
 		igra1.startGame();
 		while (igra1.gameScore() == 0) {
-			System.out.println("Unesite poziciju poteza: ");
-			igra1.makeAMove(s.nextInt());
-			igra1.playNext();
+			System.out.print("Unesite poziciju poteza: ");
+			int p = s.nextInt();
+			if (igra1.isValidMove(p) == true && igra1.isFieldFree(p) == true) {
+				igra1.makeAMove(p);
+				igra1.print();
+				igra1.playNext();
+			} else {
+				System.out.println("You entered invalid position.");
+			}
+			
 		}
-		igra1.print();
+		
 	}
 
 }

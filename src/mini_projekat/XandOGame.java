@@ -73,10 +73,13 @@ public class XandOGame {
 	
 	public boolean isFieldFree(int fieldNumber) {
 		if ("x".equals(table.get(fieldNumber)) || "o".equals(table.get(fieldNumber))) {
-			System.out.println("Polje je prazno!");
+			System.out.println("Polje nije prazno!");
+			return false;
+		} else {
+			System.out.println("Poslje je prazno!");
 			return true;
 		}
-		return false;
+		
 	}
 	
 	public void playNext() {
